@@ -1,0 +1,32 @@
+﻿<Window x:Class="ChainOfResponsibility.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChainOfResponsibility"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="12*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="Gray">
+            <Button IsEnabled="False" Click="SignInBtn_Click" Name="SignInBtn" Content="Sign in" FontSize="22" Height="35" Background="DarkGray" VerticalAlignment="Top" VerticalContentAlignment="Top">
+                
+            </Button>
+            <Button Click="SignUpBtn_Click" Name="SignUpBtn" Margin="10,0,0,0" Content="Sign up" FontSize="22" Height="35" Background="DarkGray" VerticalAlignment="Top" VerticalContentAlignment="Top">
+
+            </Button>
+            <Button IsEnabled="False" Click="ProductsBtn_Click" Name="ProductsBtn" Margin="10,0,0,0" Content="Products" FontSize="22" Height="35" Background="DarkGray" VerticalAlignment="Top" VerticalContentAlignment="Top">
+
+            </Button>
+        </StackPanel>
+
+        <Grid Grid.Row="1" Name="UCgrid">
+            
+        </Grid>
+        
+    </Grid>
+</Window>
